@@ -1,0 +1,59 @@
+* {
+    font-size: 16px;
+    color: #ffffff;
+}
+.test {
+    color: black;
+}
+
+@mixin boxSize($prop) {
+    width: $prop;
+    height: 60px;
+    border-radius: 5px;
+    background: #55acee;
+    box-shadow: 0 5px 0 #3C93D5;
+    transition: .3s;
+    border: none;
+    margin: 40px;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input::placeholder {
+    color: #ffffff;
+}
+
+.form{
+    width: 600px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    background-color: #01588d;
+}
+
+.btn {
+    @include boxSize(200px);
+    transition: .3s;
+
+    &:hover {
+        @include boxSize(200px);
+        background: #6FC6FF;
+        transition: .3s;
+    }
+}
+
+.nameField {
+    @include boxSize(300px);
+
+    &:hover {
+        @include boxSize(300px);
+        background: #6FC6FF;
+        transition: .3s;
+    }
+}
