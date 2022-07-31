@@ -11,10 +11,6 @@ type PropsType = {
 
 const Name: FC<PropsType> = ({name, setName, nameDirty, nameError, blurHandler, nameOnChangeHandler}) => {
     console.log('render name')
-    const [name, setName] = useState()
-    const handleChange = () => {
-
-    }
     return (
         <>
             {(nameDirty && nameError) && <div className='error'>{nameError}</div>}
