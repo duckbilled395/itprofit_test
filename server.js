@@ -19,7 +19,7 @@ app.post('/qwe', (req, res) =>{
             'Content-Type': '*/*'
         }
         res.send({
-            status: 'succ',
+            status: 'success',
             id: 'qwe'
         })
         res.status(400).json()
