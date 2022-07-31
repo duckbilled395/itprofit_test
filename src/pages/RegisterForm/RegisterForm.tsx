@@ -162,7 +162,7 @@ const Form: FC = () => {
             })
                 .then(res => res.json())
                 .then(res => {
-                    console.log('res data', res)
+                    alert(res.status)
                 })
                 .catch(err => {
                     console.log('err', err)
