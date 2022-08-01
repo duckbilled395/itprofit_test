@@ -9,7 +9,7 @@ app.use(cors())
 app.use(bodyParser.json())
 app.post('/qwe', (req, res) =>{
     console.log('body',req.body)
-    if (!req.body.name) {
+    if (!req.body.firstName) {
         res.send({
             err: 'NO NAME'
         })
