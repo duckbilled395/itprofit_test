@@ -1,0 +1,26 @@
+@import './mixins';
+@import './normalize';
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); // remove highlight color
+  font-size: $base-font-size;
+  color: $white;
+  font-family: $main-font;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+#root{
+  height: 100%;
+}

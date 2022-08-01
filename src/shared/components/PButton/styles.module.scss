@@ -1,0 +1,10 @@
+.PButton__button{
+  @include boxSize(200px);
+  transition: .3s;
+
+  &:hover {
+    @include boxSize(200px);
+    background: #6FC6FF;
+    transition: .3s;
+  }
+}

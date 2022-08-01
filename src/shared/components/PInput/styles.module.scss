@@ -1,0 +1,22 @@
+.PInput__input {
+  @include boxSize(300px);
+
+  &::placeholder {
+    font-size: $base-font-size;
+    color: $white;
+    font-family: $main-font;
+  }
+
+  &:hover {
+    @include boxSize(300px);
+    background: $lightBlue;
+    transition: .3s;
+  }
+}
+
+.PInput__errorContainer{
+  margin-top: 6px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

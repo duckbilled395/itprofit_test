@@ -1,0 +1,10 @@
+@mixin boxSize($prop) {
+  width: $prop;
+  height: 60px;
+  border-radius: 5px;
+  background: #55acee;
+  box-shadow: 0 5px 0 #3C93D5;
+  transition: .3s;
+  border: none;
+  margin-top: 20px;
+}

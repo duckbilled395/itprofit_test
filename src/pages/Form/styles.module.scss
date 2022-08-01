@@ -1,0 +1,27 @@
+.Form__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Form__form {
+  width: 600px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $blue;
+}
+
+.Form__datePickerContainer {
+  @include boxSize(300px);
+
+  &:hover {
+    @include boxSize(300px);
+    background: $lightBlue;
+    transition: .3s;
+  }
+}
